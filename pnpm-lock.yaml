@@ -15,8 +15,8 @@ dependencies:
     specifier: ^2.4.3
     version: 2.4.4
   '@astrojs/sitemap':
-    specifier: ^1.3.3
-    version: 1.3.3
+    specifier: ^1.4.0
+    version: 1.4.0
   '@astrojs/tailwind':
     specifier: ^3.1.3
     version: 3.1.3(astro@2.10.3)
@@ -30,7 +30,7 @@ dependencies:
     specifier: ^3.1.7
     version: 3.1.7(postcss@8.4.38)
   dayjs:
-    specifier: ^1.11.10
+    specifier: ^1.11.9
     version: 1.11.10
   marked:
     specifier: ^7.0.2
@@ -183,11 +183,11 @@ packages:
       kleur: 4.1.5
     dev: false
 
-  /@astrojs/sitemap@1.3.3:
-    resolution: {integrity: sha512-TPyyb/hKxc+bHPpSoNPhsuI0QOTVzq2tueg2r0CTH1HqigYIAA2LQkCBlQzz85R+LrOZpv4kXYmhxdDcSkJCmA==}
+  /@astrojs/sitemap@1.4.0:
+    resolution: {integrity: sha512-uTK77kcg7iTiik+u7rTGG6vK4ZWTfYMaVnFndOVQrLzaE5xivmQgIbVLtlN+xRcME5n/m6vYQFJmogFR+elGCw==}
     dependencies:
       sitemap: 7.1.1
-      zod: 3.21.4
+      zod: 3.22.4
     dev: false
 
   /@astrojs/tailwind@3.1.3(astro@2.10.3):
@@ -1394,6 +1394,12 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: false
 
+  /@types/node@20.12.7:
+    resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: false
+
   /@types/parse-json@4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: false
@@ -1427,8 +1433,8 @@ packages:
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
     dev: false
 
-  /@types/sax@1.2.4:
-    resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
+  /@types/sax@1.2.7:
+    resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
     dependencies:
       '@types/node': 17.0.45
     dev: false
@@ -1455,7 +1461,7 @@ packages:
   /@types/vfile@3.0.2:
     resolution: {integrity: sha512-b3nLFGaGkJ9rzOcuXRfHkZMdjsawuDD0ENL9fzTophtBg8FJHSGbH7daXkEpcwy3v7Xol3pAvsmlYyFhR4pqJw==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.12.7
       '@types/unist': 2.0.7
       '@types/vfile-message': 2.0.0
     dev: false
@@ -1485,7 +1491,7 @@ packages:
   /@wry/context@0.4.4:
     resolution: {integrity: sha512-LrKVLove/zw6h2Md/KZyWxIkFM6AoyKp71OqpH9Hiip1csjPVoD3tPxlbQUNxEnHENks3UGgNpSBCAfq9KWuag==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.12.7
       tslib: 1.14.1
     dev: false
 
@@ -7478,6 +7484,10 @@ packages:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
     dev: false
 
+  /sax@1.3.0:
+    resolution: {integrity: sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA==}
+    dev: false
+
   /scheduler@0.20.2:
     resolution: {integrity: sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==}
     dependencies:
@@ -7646,9 +7656,9 @@ packages:
     hasBin: true
     dependencies:
       '@types/node': 17.0.45
-      '@types/sax': 1.2.4
+      '@types/sax': 1.2.7
       arg: 5.0.2
-      sax: 1.2.4
+      sax: 1.3.0
     dev: false
 
   /slate-base64-serializer@0.2.115(slate@0.47.9):
@@ -8292,6 +8302,10 @@ packages:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
+    dev: false
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: false
 
   /undici@5.22.1:
@@ -8972,6 +8986,10 @@ packages:
 
   /zod@3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+    dev: false
 
   /zwitch@1.0.5:
     resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
