@@ -30,8 +30,8 @@ dependencies:
     specifier: ^1.11.9
     version: 1.11.10
   marked:
-    specifier: ^7.0.2
-    version: 7.0.5
+    specifier: ^12.0.0
+    version: 12.0.1
   marked-plaintext:
     specifier: ^0.0.2
     version: 0.0.2
@@ -4445,9 +4445,9 @@ packages:
     resolution: {integrity: sha512-6u/EfbyqTV8p9CqxFUOK3RUGo1KGULVUaiacKRjb+9VzXpGYYQlgff76xjlfxOGYpsDkzYg+l28CtGd86I6c0w==}
     dev: false
 
-  /marked@7.0.5:
-    resolution: {integrity: sha512-lwNAFTfXgqpt/XvK17a/8wY9/q6fcSPZT1aP6QW0u74VwaJF/Z9KbRcX23sWE4tODM+AolJNcUtErTkgOeFP/Q==}
-    engines: {node: '>= 16'}
+  /marked@12.0.1:
+    resolution: {integrity: sha512-Y1/V2yafOcOdWQCX0XpAKXzDakPOpn6U0YLxTJs3cww6VxOzZV1BTOOYWLvH3gX38cq+iLwljHHTnMtlDfg01Q==}
+    engines: {node: '>= 18'}
     hasBin: true
     dev: false
 
