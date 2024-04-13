@@ -1,0 +1,31 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checke dein Repository mit Git aus
+        uses: actions/checkout@v4
+      - name: Installiere Abhängigkeiten, erzeuge deine Website und lade sie hoch
+        uses: withastro/action@v2
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Bei GitHub Pages veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v4
