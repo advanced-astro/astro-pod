@@ -37,6 +37,16 @@ The configuration for the deployment varies depending on the platform where you 
 Astropod is designed to work with any file storage solution.
 
 You can host your podcast files in your own code base inside the folder `public/audio` and this will automatically work with [git LFS](https://git-lfs.com/) but free plans in GitHub and GitLab for LFS are limited so take that in mind.
+Create a file `public/audio/.gitattributes` with the following content to use this option.
+
+```txt
+*.aac filter=lfs diff=lfs merge=lfs -text
+*.m4a filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.opus filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+```
 
 You can also host your podcast files in any other cloud storage solution like DropBox, Google Drive, Cloudinary or on your own server. Once you upload your audio file you just need to copy the public URL of the audio file into your episode `AudioUrl` field.
 
@@ -80,14 +90,13 @@ All commands are run from the root of the project, from a terminal:
 ```txt
 ├── src/
 │   ├── components/         // UI components
-│   ├── content/  
-│   │   ├── episode/        // Podcast episodes folder
+│   ├── content/
+│   │   └── episode/        // Podcast episodes folder
 │   ├── layouts/            // UI Layouts
 │   ├── helpers/            // App helpers like static data or functions
 │   └── pages/
 │   │   ├── rss.xml.js/     // Feed RSS generation file
 ├── public/                 // Public folder dor media files
-│   ├── audio/              // Git LFS folder for audio storage
 ├── .astropod/              // Astropod config files folder
 ├── astro.config.mjs        // Astro config file
 ├── decap.config.mjs        // Decap CMS config file
