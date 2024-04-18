@@ -1,6 +1,8 @@
 # Astropod | Free and Open Source Serverless Podcast
 
-![Astropod](https://github.com/manuelernestog/manuelernestog/assets/53962116/3106bf65-37f9-427f-9b50-72d7ae22752f)
+[![Built with Astro][astro-badge]][astro]
+[![License: MIT][license-badge]][license]
+[![GitHub Repo Stars][gh-stars]][gh-repo]
 
 _Astropod_ is a free and open-source self-hosting serverless podcast solution.
 It supports diverse deployment services and audio hosting options and includes a customizable website deployable in a few clicks, with a personalized domain and a user-friendly CMS for effortless podcast management.
@@ -66,9 +68,10 @@ The fact that _Astropod_ comes configured by default with _Decap_ does not mean 
 
 ## Tech Stack
 
-- [Astro](https://astro.build)
-- [Tailwind](https://tailwindcss.com/)
-- [DaisyUI](https://daisyui.com/)
+- [Astro][astro]
+- [DaisyUI][daisy-ui]
+- [PodcastNamespace][podcast-namespace]
+- [Tailwind][tailwind]
 
 ## Requirements
 
@@ -83,6 +86,7 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm i`       | Installs dependencies                              |
 | `pnpm dev`     | Starts local dev & Netlify CMS proxy servers       |
 | `pnpm build`   | Build your production site to `./dist/`            |
+| `pnpm format`  | Format source code                                 |
 | `pnpm preview` | Serve `./dist/` & run the Netlify CMS proxy server |
 
 > These commands are using [`pnpm`][pnpm], but you can choose to use `npm` or `yarn` instead if you prefer.
@@ -98,7 +102,7 @@ All commands are run from the root of the project, from a terminal:
 │   ├──📁helpers           // App helpers like static data or functions
 │   └──📂pages
 │       └──📃rss.xml.js    // Feed RSS generation file
-├──📁.astropod             // Astropod config files folder
+├──📁.astropod             // Astropod config
 ├──📄astro.config.mjs      // Astro config
 └──📄decap.config.mjs      // Decap config
 ```
@@ -113,7 +117,7 @@ Please be wary of working on issues _not_ marked as `accepted`. Just because som
 
 ## License
 
-_Astropod_ is licensed under the MIT license — see the [LICENSE](https://github.com/advanced-astro/astropod/blob/main/LICENSE) file for details.
+_Astropod_ is licensed under the MIT license — see the [LICENSE][license] file for details.
 
 ## Contributors
 
@@ -121,7 +125,16 @@ _Astropod_ is licensed under the MIT license — see the [LICENSE](https://githu
 
 Made with [contrib.rocks](https://contrib.rocks).
 
+[astro]: https://astro.build
+[astro-badge]: https://astro.badg.es/v2/built-with-astro/tiny.svg
+[daisy-ui]: https://daisyui.com
 [deploy]: https://app.netlify.com/start/deploy?repository=https://github.com/advanced-astro/astropod
-[identity]: https://docs.netlify.com/visitor-access/identity/
 [gateway]: https://docs.netlify.com/visitor-access/git-gateway/
-[pnpm]: https://pnpm.io/
+[gh-stars]: https://img.shields.io/github/stars/advanced-astro/astropod
+[gh-repo]: https://github.com/advanced-astro/astropod
+[identity]: https://docs.netlify.com/visitor-access/identity/
+[license]: https://github.com/advanced-astro/astropod/blob/main/LICENSE
+[license-badge]: https://flat.badgen.net/github/license/amio/badgen
+[pnpm]: https://pnpm.io
+[podcast-namespace]: https://podcastname.space
+[tailwind]: https://tailwindcss.com
