@@ -38,8 +38,10 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.5.10",
+    "@biomejs/biome": "^1.7.0",
     "@tailwindcss/typography": "^0.5.12",
     "astro-robots-txt": "^1.0.0",
+    "biome-config-astro": "^1.1.0",
     "typescript": "^5.4.5"
   },
   "authors": "Manuel Ernesto Garcia",
