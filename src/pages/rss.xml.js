@@ -2,11 +2,11 @@ import xml2js from 'xml2js'
 import dayjs from 'dayjs'
 import astropodConfig from '../../.astropod/astropod.config.json'
 import { getCollection } from 'astro:content'
+import { marked } from 'marked'
+
 let episode = await getCollection('episode')
 episode.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 if (astropodConfig.feedSize) episode = episode.slice(0, astropodConfig.feedSize)
-
-import { marked } from 'marked'
 
 const lastBuildDate = dayjs().format('ddd, DD MMM YYYY hh:mm:ss ZZ')
 const cover = isFullUrl(astropodConfig.cover)
@@ -19,8 +19,7 @@ export async function get(context) {
 			$: {
 				version: '2.0',
 				'xmlns:itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd',
-				'xmlns:podcast':
-					'https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md',
+				'xmlns:podcast': 'https://podcastindex.org/namespace/1.0',
 				'xmlns:atom': 'http://www.w3.org/2005/Atom',
 				'xmlns:content': 'http://purl.org/rss/1.0/modules/content/',
 			},
