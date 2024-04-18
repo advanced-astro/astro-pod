@@ -43,5 +43,5 @@
     "typescript": "^5.4.5"
   },
   "authors": "Manuel Ernesto Garcia",
-  "packageManager": "pnpm@8.15.7"
+  "packageManager": "pnpm@9.0.3"
 }
