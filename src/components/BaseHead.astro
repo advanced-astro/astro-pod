@@ -2,15 +2,15 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 export interface Props {
-  title: string;
-  description: string;
-  image?: string;
+	title: string
+	description: string
+	image?: string
 }
 
-import astropodConfig from "../../.astropod/astropod.config.json";
-const { title, description, image } = Astro.props;
+import astropodConfig from '../../.astropod/astropod.config.json'
+const { title, description, image } = Astro.props
 
-const display_image = image ? image : astropodConfig.cover;
+const display_image = image ? image : astropodConfig.cover
 ---
 
 <!-- Global Metadata -->

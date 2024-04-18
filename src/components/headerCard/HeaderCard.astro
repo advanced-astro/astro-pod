@@ -1,14 +1,14 @@
 ---
-import astropodConfig from "../../../.astropod/astropod.config.json";
-const { title, subtitle, explicit, cover } = Astro.props;
+import astropodConfig from '../../../.astropod/astropod.config.json'
+const { title, subtitle, explicit, cover } = Astro.props
 
-import ListenOnMenu from "./listenOnMenu.astro";
-import FollowUsMenu from "./followUsMenu.astro";
-import RssIcon from "../icons/rssIcon.astro";
-import HeartIcon from "../icons/heartIcon.astro";
+import ListenOnMenu from './listenOnMenu.astro'
+import FollowUsMenu from './followUsMenu.astro'
+import RssIcon from '../icons/rssIcon.astro'
+import HeartIcon from '../icons/heartIcon.astro'
 
-const explicitLabel = explicit === undefined ? astropodConfig.explicit : explicit;
-let cover_url = cover ? cover : astropodConfig.cover;
+const explicitLabel = explicit === undefined ? astropodConfig.explicit : explicit
+let cover_url = cover ? cover : astropodConfig.cover
 ---
 
 <div class="card min-w-full bg-base-100 shadow-md md:pb-3 w-full">

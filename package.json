@@ -19,6 +19,7 @@
     "build": "astro build",
     "check": "astro check",
     "dev": "astro dev",
+    "format": "biome format src --write",
     "preview": "astro preview",
     "start": "astro dev"
   },
