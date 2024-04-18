@@ -23,12 +23,14 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "@astrojs/mdx": "^2.3.0",
+    "@astrojs/mdx": "^2.3.1",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.4",
     "@astrojs/tailwind": "^5.1.0",
+    "@tailwindcss/typography": "^0.5.12",
     "astro": "^4.6.3",
     "astro-decap-cms": "^0.2.0",
+    "astro-robots-txt": "^1.0.0",
     "daisyui": "^4.10.2",
     "dayjs": "^1.11.10",
     "marked": "^12.0.1",
@@ -39,8 +41,6 @@
   "devDependencies": {
     "@astrojs/check": "^0.5.10",
     "@biomejs/biome": "^1.7.0",
-    "@tailwindcss/typography": "^0.5.12",
-    "astro-robots-txt": "^1.0.0",
     "biome-config-astro": "^1.1.0",
     "typescript": "^5.4.5"
   },
