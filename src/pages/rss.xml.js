@@ -13,14 +13,13 @@ const cover = isFullUrl(astropodConfig.cover)
 	? astropodConfig.cover
 	: astropodConfig.link + astropodConfig.cover
 
-export async function get(context) {
+export async function GET(context) {
 	let podcast = {
 		rss: {
 			$: {
 				version: '2.0',
 				'xmlns:itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd',
-				'xmlns:podcast':
-					'https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/1.0.md',
+				'xmlns:podcast': 'https://podcastindex.org/namespace/1.0',
 				'xmlns:atom': 'http://www.w3.org/2005/Atom',
 				'xmlns:content': 'http://purl.org/rss/1.0/modules/content/',
 			},
