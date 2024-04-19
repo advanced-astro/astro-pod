@@ -13,7 +13,7 @@ const cover = isFullUrl(astropodConfig.cover)
 	? astropodConfig.cover
 	: astropodConfig.link + astropodConfig.cover
 
-export async function get(context) {
+export async function GET(context) {
 	let podcast = {
 		rss: {
 			$: {
